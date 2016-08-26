@@ -25,7 +25,7 @@
 		.wrapper{
 			max-width:600px;
 			margin:10px auto;
-            border: 1px solid #f3f3f3;
+			border:1px solid #f3f3f3;
 			overflow:hidden;
 			-webkit-border-radius:5px;
 			-ms-border-radius:5px;
@@ -37,7 +37,7 @@
 		.wrapper .header{
 			/*@editable*/background-color:#f3f3f3;
 			/*@editable*/text-align:center;
-			/*@editable*/padding: 40px 0;
+			/*@editable*/padding:40px 0;
 		}
 	/*
 	@tab Image Logo
@@ -106,7 +106,7 @@
 			/*@editable*/background-color:#15a99e;
 			/*@editable*/text-align:center;
 			/*@editable*/color:#ffffff;
-			/*@editable*/padding: 40px 0;
+			/*@editable*/padding:40px 0;
 		}
 		.footer .social{
 			margin-top:15px;
@@ -143,59 +143,38 @@
 			<tr>
 				<td class="header">
 					<img src="https://gallery.mailchimp.com/3ae020740be1cf5b1f960f70e/images/5833fcf4-a46d-443d-8188-5b98f6733b13.png" alt="" border="0" style="margin: 0; padding: 0;" mc:edit="main_logo">
-					<h1>Monthly Movie</h1>
+					<h1 mc:edit="main_title">Monthly Movie</h1>
 				</td>
 			</tr>
 			<tr>
 				<td class="content">
-					<p>
+					<p mc:edit="paragraph1" mc:repeatable>
 						Hello Brothers & Sisters, As we're now on the third week of this month, we'd like to hold Monthly Movie on Friday, August 19, 2016. Please write down your name and the movie you'd like to watch. Here is the movie list for this month:
 					</p>
 					<table class="table-content" cellpadding="0" cellspacing="0" border="0">
-						<tr>
-							<td class="img-movie"><img src="https://gallery.mailchimp.com/3ae020740be1cf5b1f960f70e/images/68905c63-ac83-4be1-b535-b44ba9de600f.jpg" alt="" border="0" style="margin: 0; padding: 0;" mc:edit="img_thumb_1"></td>
+						<tr mc:repeatable>
+							<td class="img-movie"><img src="https://gallery.mailchimp.com/3ae020740be1cf5b1f960f70e/images/68905c63-ac83-4be1-b535-b44ba9de600f.jpg" alt="" border="0" style="margin: 0; padding: 0;" mc:hideable mc:edit="img_thumb_1"></td>
 							<td class="content-movie">
-								<h2>Lights Out</h2>
-								<div class="button-view"><a href="#">View More</a></div>
-							</td>
-						</tr>
-						<tr>
-							<td class="img-movie"><img src="https://gallery.mailchimp.com/3ae020740be1cf5b1f960f70e/images/afe4077d-05a0-4e95-9d81-ca5b87bd0d81.jpg" alt="" border="0" style="margin: 0; padding: 0;" mc:edit="img_thumb_2"></td>
-							<td class="content-movie">
-								<h2>Suicide Squad</h2>
-								<div class="button-view"><a href="#">View More</a></div>
-							</td>
-						</tr>
-						<tr>
-							<td class="img-movie"><img src="https://gallery.mailchimp.com/3ae020740be1cf5b1f960f70e/images/19d47f9f-99e3-4160-bc92-7fef54ff0c7c.jpg" alt="" border="0" style="margin: 0; padding: 0;" mc:edit="img_thumb_3"></td>
-							<td class="content-movie">
-								<h2>Winter In Tokyo</h2>
-								<div class="button-view"><a href="#">View More</a></div>
-							</td>
-						</tr>
-						<tr>
-							<td class="img-movie"><img src="https://gallery.mailchimp.com/3ae020740be1cf5b1f960f70e/images/4ef64723-8aed-4f5c-939e-a68e99a84a46.jpg" alt="" border="0" style="margin: 0; padding: 0;" mc:edit="img_thumb_4"></td>
-							<td class="content-movie">
-								<h2>Alice Through The Looking Glass</h2>
-								<div class="button-view"><a href="#">View More</a></div>
+								<h2 mc:edit="movietitle">Lights Out</h2>
+								<div class="button-view" mc:hideable><a href="#" mc:edit="button_text">View More</a></div>
 							</td>
 						</tr>
 					</table>
-					<p>
+					<p mc:edit="paragraph2" mc:repeatable>
 						Vote will be closed on Friday, August 19, 2016 at 10 AM. For those who would like to bring family or friends, the payment should be received on Friday, August 19, 2016 as well.
 					</p>
-					<div class="vote">
-						<a href="#">Vote your movie</a>
+					<div class="vote" mc:hideable>
+						<a href="#" mc:edit="btn_bottom">Vote your movie</a>
 					</div>
 				</td>
 			</tr>
 			<tr>
 				<td class="footer">
-					<div class="connect">Connect With Us:</div>
+					<div class="connect" mc:edit="connect">Connect With Us:</div>
 					<div class="social">
-                    	<a hreff="#"><img src="https://gallery.mailchimp.com/3ae020740be1cf5b1f960f70e/images/be51ad72-bdbd-4b8f-a28b-7080343e79bd.png" alt="" border="0" style="margin: 0; padding: 0;" mc:edit="social_1"></a>
-                        <a hreff="#"><img src="https://gallery.mailchimp.com/3ae020740be1cf5b1f960f70e/images/fe45c373-af9e-4ccd-8a6f-1145e33b58dd.png" alt="" border="0" style="margin: 0; padding: 0;" mc:edit="social_2"></a>
-                        <a hreff="#"><img src="https://gallery.mailchimp.com/3ae020740be1cf5b1f960f70e/images/e78e6048-9615-418c-a42a-1af8ad3d6c68.png" alt="" border="0" style="margin: 0; padding: 0;" mc:edit="social_3"></a>
+                    	<a href="#" mc:hideable><img mc:edit="social_1" src="https://gallery.mailchimp.com/3ae020740be1cf5b1f960f70e/images/be51ad72-bdbd-4b8f-a28b-7080343e79bd.png" alt="" border="0" style="margin: 0; padding: 0;"></a>
+                        <a href="#" mc:hideable><img mc:edit="social_2" src="https://gallery.mailchimp.com/3ae020740be1cf5b1f960f70e/images/fe45c373-af9e-4ccd-8a6f-1145e33b58dd.png" alt="" border="0" style="margin: 0; padding: 0;"></a>
+                        <a href="#" mc:hideable><img mc:edit="social_3" src="https://gallery.mailchimp.com/3ae020740be1cf5b1f960f70e/images/e78e6048-9615-418c-a42a-1af8ad3d6c68.png" alt="" border="0" style="margin: 0; padding: 0;"></a>
                     </div>
 				</td>
 			</tr>
